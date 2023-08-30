@@ -66,12 +66,12 @@ select {
 
 .flex {
   display: flex;
-  gap: var(--gap, 1 rem);
+  gap: var(--gap, 5 rem);
 }
 
 .grid {
   display: grid;
-  gap: var(--gap, 1 rem);
+  gap: var(--gap, 5 rem);
 }
 
 .container {
