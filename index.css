@@ -114,6 +114,12 @@ select {
   gap: var(--gap, 5 rem);
 }
 
+/* selects all elements except first child */
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1 rem);
+  outline: 1px solid red;
+}
+
 .container {
   padding-inline: 2em;
   margin-inline: auto;
