@@ -15,8 +15,9 @@
   </head>
 
   <body class="bg-dark text-white">
-    <div class="container">
+    <div class="container flow">
       <h1 class="uppercase">Design System</h1>
+
       <section id="colors" style="margin: 4rem 0">
         <h2 class="numbered-title"><span>01</span> colors</h2>
         <div class="flex">
@@ -55,10 +56,10 @@
         </div>
       </section>
 
-      <section id="typography" style="margin: 4rem 0">
+      <section class="flow" id="typography" style="margin: 4rem 0">
         <h2 class="numbered-title"><span>02 </span>Typography</h2>
         <div class="flex">
-          <div class="flow" style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
               <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p class="fs-900 ff-serif uppercase">Earth</p>
@@ -82,23 +83,27 @@
                 Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character
                 Space
               </p>
-              <p class="fs-500 ff-sans-cond uppercase letter-spacing-1">
+              <p
+                class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1"
+              >
                 So, you want to travel to space
               </p>
             </div>
           </div>
 
-          <div class="flow" style="flex-basis: 100%" --flow-space: 4rem;">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
               <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
-              <p class="uppercase">384,400 km</p>
+              <p class="fs-500 ff-serif uppercase">384,400 km</p>
             </div>
             <div>
               <p class="text-accent">
                 Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
                 Space
               </p>
-              <p class="uppercase">Avg. Distance</p>
+              <p class="fs-200 uppercase ff-sans-cond letter-spacing-3">
+                Avg. Distance
+              </p>
             </div>
             <div>
               <p class="text-accent">
@@ -109,8 +114,8 @@
               </p>
             </div>
             <div>
-              <p>Body Text</p>
-              <p class="text-accent">
+              <p class="text-accent">Body Text</p>
+              <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
                 neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
@@ -127,6 +132,42 @@
                 dapibus id, mattis vel, nisi.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container flow">
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
+
+        <!-- navigation -->
+        <div>
+          <nav>
+            <ul class="primary-navigation">
+              <li><a href="#">Active</a></li>
+              <li><a href="#">Hovered</a></li>
+              <li><a href="#">Idle</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div style="margin-top: 5rem">
+            <!-- explore button -->
+            <a
+              href="#"
+              class="large-button uppercase ff-serif fs-600 text-dark bg-white"
+              >Explore</a
+            >
+          </div>
+
+          <div style="margin-bottom: 50vh">
+            <!-- Tabs -->
+
+            <!-- Dots -->
+
+            <!-- Numbers -->
           </div>
         </div>
       </section>
